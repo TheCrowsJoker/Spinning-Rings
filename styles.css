@@ -1,0 +1,58 @@
+body {
+  background: #000;
+  margin: 0;
+  padding: 0; }
+  body .wrapper {
+    position: fixed;
+    top: 50px;
+    left: 50px; }
+    body .wrapper .ring {
+      border: 5px solid #fff;
+      border-radius: 50%;
+      position: fixed;
+      text-align: center;
+      color: #fff; }
+      body .wrapper .ring.ring-one {
+        height: 300px;
+        width: 300px;
+        z-index: 1;
+        -webkit-animation: rotation 10s infinite linear; }
+        body .wrapper .ring.ring-one .ring-marker {
+          top: -25px;
+          left: 125px; }
+      body .wrapper .ring.ring-two {
+        height: 200px;
+        width: 200px;
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+        -webkit-animation: rotation 15s infinite linear; }
+        body .wrapper .ring.ring-two .ring-marker {
+          top: -25px;
+          left: 75px; }
+      body .wrapper .ring.ring-three {
+        height: 100px;
+        width: 100px;
+        top: 150px;
+        left: 150px;
+        z-index: 3;
+        -webkit-animation: rotation 20s infinite linear; }
+        body .wrapper .ring.ring-three .ring-marker {
+          top: -25px;
+          left: 25px; }
+      body .wrapper .ring .ring-marker {
+        border: 5px solid #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: -40px;
+        left: -40px;
+        position: absolute; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+
+/*# sourceMappingURL=styles.css.map */
